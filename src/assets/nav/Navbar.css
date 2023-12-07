@@ -1,0 +1,9 @@
+.search_class {
+  border: 0.5px solid gray;
+  width: 70px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 3px 10px;
+}
+/* /////////////////////////////////////// */
