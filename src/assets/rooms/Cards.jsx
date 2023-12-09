@@ -4,16 +4,16 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { Box } from "@mui/material";
 
-export default function MediaCard() {
+export default function MediaCard(props) {
   return (
-    <Card sx={{ maxWidth: 245 }}>
+    <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         style={{
           height: 350,
           position: "relative",
           objectFit: "cover",
         }}
-        image="room.jpg"
+        image={props.image}
         title="room"
       />
       {/* <CardContent></CardContent> */}
@@ -26,10 +26,15 @@ export default function MediaCard() {
           flexDirection: "column",
         }}
       >
-        <Button size="small">
+        <Button
+          size="small"
+          sx={{ backgroundColor: "#f0f8ff57;", marginLeft: "10px" }}
+        >
           {" "}
           <Typography
-            sx={{ color: "white", marginLeft: "8px" }}
+            sx={{
+              color: "white",
+            }}
             fontWeight={600}
           >
             House

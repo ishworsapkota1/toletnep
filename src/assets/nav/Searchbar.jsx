@@ -1,8 +1,8 @@
 import SearchIcon from "@mui/icons-material/Search";
-import { InputBase, alpha } from "@mui/material";
+import { InputBase } from "@mui/material";
 import { styled } from "@mui/system";
 import CameraAltOutlinedIcon from "@mui/icons-material/CameraAltOutlined";
-import "./Navbar.css";
+import "./Searchbar.css";
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
   borderRadius: theme.shape.borderRadius,

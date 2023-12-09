@@ -1,22 +1,30 @@
-import "./App.css";
-import Navbar from "./assets/nav/Navbar";
-import Dropdowns from "./assets/dropdowns/Dropdowns";
-import { Container } from "@mui/material";
-// import TandL from "./assets/typo_and_location/TandL";
-import Typo from "./assets/typo_and_location/Typo";
-import Roomwrapper from "./assets/rooms/Roomwrapper";
-function App() {
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+  Routes,
+  createRoutesFromElements,
+  BrowserRouter,
+} from "react-router-dom";
+import Homes from "./assets/homefolder/Homes";
+import WishList from "./assets/wishlist/WishList";
+import Settings from "./assets/settings/Settings";
+import Layouts from "./assets/homefolder/Layouts";
+const App = () => {
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route>
+        <Route path="/" element={<Homes />}></Route>
+        <Route path="/wishlist" element={<WishList />}></Route>
+        <Route path="/settings" element={<Settings />}></Route>
+      </Route>
+    )
+  );
   return (
     <>
-      <Navbar />
-      <Container>
-        <Dropdowns />
-        {/* <TandL /> */}
-        <Typo />
-        <Roomwrapper />
-      </Container>
+      <RouterProvider router={router} />
     </>
   );
-}
-
+};
 export default App;
+// // ----------------------------------------------------------------

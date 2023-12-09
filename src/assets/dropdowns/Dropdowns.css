@@ -2,5 +2,21 @@
   margin-top: 20px;
   border-radius: 50px;
   /* color: pink; */
-  background-color: #ebebeb;
+  /* background-color: #ebebeb; */
+  width: 100%;
 }
+/* ////////////////// */
+/* navlists lai */
+.nav ul {
+  list-style: none;
+  /* background-color: pink; */
+  display: flex;
+  font-size: 20px;
+  margin-right: 100px;
+  gap: 40px;
+}
+.nav {
+  margin-top: 15px;
+}
+
+/* /////////////////// */

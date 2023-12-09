@@ -1,4 +1,3 @@
-import React from "react";
 import Viewrooms from "./Viewrooms";
 import { Box, Typography } from "@mui/material";
 import Viewall from "./Viewall";
@@ -11,6 +10,7 @@ const Roomwrapper = () => {
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
+          marginBottom: "20px",
         }}
       >
         <Box>
@@ -19,7 +19,7 @@ const Roomwrapper = () => {
         </Box>
         <Box>
           {" "}
-          <Viewall></Viewall>{" "}
+          <Viewall />
         </Box>
       </Box>
       <Viewrooms />

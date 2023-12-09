@@ -14,7 +14,7 @@ export default function BasicSelect() {
   };
 
   return (
-    <Box sx={{ maxWidth: 160 }} className="hi">
+    <Box sx={{ maxWidth: 200 }} className="hi">
       <FormControl fullWidth sx={{}}>
         <InputLabel id="demo-simple-select-label">Choose a city</InputLabel>
         <Select
@@ -29,9 +29,9 @@ export default function BasicSelect() {
             ".MuiOutlinedInput-notchedOutline": { border: 0 },
           }}
         >
-          <MenuItem value={10}>Ten</MenuItem>
-          <MenuItem value={20}>Twenty</MenuItem>
-          <MenuItem value={30}>Thirty</MenuItem>
+          <MenuItem value={10}>Kathmandu</MenuItem>
+          <MenuItem value={20}>Lalitpur</MenuItem>
+          <MenuItem value={30}>Bhaktapur</MenuItem>
         </Select>
       </FormControl>
     </Box>

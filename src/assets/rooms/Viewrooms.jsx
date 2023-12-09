@@ -1,14 +1,12 @@
 import { Box } from "@mui/material";
 import React from "react";
 import Cards from "./Cards";
+import Swiperrs from "./Swiperrs";
 
 const Viewrooms = () => {
   return (
     <Box>
-      <Cards />
-      <br />
-      <Cards />
-      {/* <Cards /> */}
+      <Swiperrs></Swiperrs>
     </Box>
   );
 };
