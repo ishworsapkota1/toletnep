@@ -1,13 +1,23 @@
 import "./Navbars.css";
 import Dropdowns from "./Dropdowns";
-import { Box } from "@mui/material";
+import { Box, Container, containerClasses } from "@mui/material";
 import NavLists from "./NavLists";
 import Layouts from "../homefolder/Layouts";
-// import Searchbar from "../nav/Searchbar";
+import Searchbar from "../nav/Searchbar";
 const Navbars = () => {
   return (
-    <>
-      {/* <Searchbar /> */}
+    <Box
+      // className="container"
+      sx={{
+        width: "100%",
+        position: "fixed",
+        top: "0px",
+        zIndex: "2",
+        backgroundColor: "white",
+        // margin: "auto",
+      }}
+    >
+      <Searchbar />
 
       <Box
         style={{
@@ -16,11 +26,12 @@ const Navbars = () => {
           alignItems: "center",
           justifyContent: "space-between",
         }}
+        className="container"
       >
         <Dropdowns />
         <NavLists />
       </Box>
-    </>
+    </Box>
   );
 };
 

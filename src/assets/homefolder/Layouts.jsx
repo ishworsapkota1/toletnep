@@ -6,26 +6,35 @@ import SettingsIcon from "@mui/icons-material/Settings";
 
 const Layouts = () => {
   return (
-    <Box>
-      <Box style={{ backgroundColor: "aliceblue", bottom: "auto" }}>
-        {" "}
+    <Box
+      style={{
+        backgroundColor: "aliceblue",
+        width: "100%",
+        justifyContent: "center",
+        display: "flex",
+        gap: "150px",
+        position: "fixed",
+        bottom: "0",
+        marginTop: "auto",
+      }}
+    >
+      <Box>
         <Link to="/">
-          <IconButton
-            className="iconer"
-            sx={{
-              marginLeft: "300px",
-            }}
-          >
+          <IconButton className="iconer" sx={{}}>
             <HomeIcon /> Home
           </IconButton>
         </Link>
+      </Box>
+      <Box>
         <Link to="/wishlist">
-          <IconButton sx={{ marginLeft: "300px" }}>
+          <IconButton sx={{}}>
             <NotificationsIcon /> Wishlist
           </IconButton>
         </Link>
+      </Box>
+      <Box>
         <Link to="/settings">
-          <IconButton sx={{ marginLeft: "300px" }}>
+          <IconButton sx={{}}>
             <SettingsIcon /> Settings
           </IconButton>
         </Link>

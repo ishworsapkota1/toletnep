@@ -1,23 +1,21 @@
-import { Box, Container, Grid } from "@mui/material";
+import { Box, Container } from "@mui/material";
 import Roomwrapper from "../rooms/Roomwrapper";
-import Searchbar from "../nav/Searchbar";
-import Navbars from "../dropdowns/Navbars";
-import Layouts from "./Layouts";
+
 import HomeContents from "./homecontents/HomeContents";
+import Discount from "./discount/Discount";
 
 const Homes = () => {
   return (
-    <Box>
-      <Searchbar />
+    <Box sx={{ marginBottom: "50px", marginTop: "100px" }}>
+      {/* <Searchbar /> */}
       <Container>
-        <Navbars />
+        {/* <Navbars /> */}
         {/* <Typo /> */}
         <Roomwrapper />
         {/* //////////////////// */}
         <HomeContents />
-        {/* /////////////////////////// */}
+        <Discount />
       </Container>
-      <Box sx={{ marginTop: "5%" }}>{/* <Layouts /> */}</Box>
     </Box>
   );
 };

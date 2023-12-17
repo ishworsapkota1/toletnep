@@ -3,6 +3,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { Box } from "@mui/material";
+import { Link } from "react-router-dom";
 
 export default function MediaCard(props) {
   return (
@@ -40,9 +41,11 @@ export default function MediaCard(props) {
             House
           </Typography>{" "}
         </Button>
-        <Button size="small">
-          <Typography sx={{ color: "white" }}>View</Typography>{" "}
-        </Button>
+        <Link to="carters">
+          <Button size="small">
+            <Typography sx={{ color: "white" }}>View</Typography>{" "}
+          </Button>
+        </Link>
       </Box>
       {/* </CardActions> */}
     </Card>

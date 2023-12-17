@@ -1,0 +1,7 @@
+.helo {
+  padding: 0.5em;
+}
+.helo input {
+  padding: 1.5em;
+  display: flex;
+}
