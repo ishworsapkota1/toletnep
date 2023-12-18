@@ -13,16 +13,14 @@ export const CartContext = createContext([])
 
 function App() {
 const [cart, setCart] = useState([])
-console.log(cart)
 const cartHelperFunction = {
   addToCart: (item) => {
-    console.log('inside add')
  const isItemInCart = cart.find((cartItem) => cartItem.name === item.name);
 
   if (isItemInCart) {
   setCart(
       cart.map((cartItem) =>
-            cartItem.id === item.id
+            cartItem.name === item.name
           ? { ...cartItem, quantity: cartItem.quantity + 1 }
           : cartItem
       )
