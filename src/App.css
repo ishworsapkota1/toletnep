@@ -2,3 +2,8 @@
   margin: 0px;
   padding: 0px;
 }
+.wishlist {
+  padding-top: 12rem;
+  padding-inline: 2rem;
+  min-height: 80vh;
+}

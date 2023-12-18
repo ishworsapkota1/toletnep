@@ -1,4 +1,5 @@
-import React from "react";
+import  { useContext } from "react";
+import {CartContext} from '../../../App'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -6,6 +7,7 @@ import Ddata from "./Ddata";
 // import "../newarrivals/style.css";
 
 const Dcard = () => {
+  const {addToCart} = useContext(CartContext)
   const settings = {
     dots: true,
     infinite: true,
@@ -25,7 +27,7 @@ const Dcard = () => {
                 </div>
                 <h4>{value.name}</h4>
                 <span>{value.price}</span>
-                <button>Add to cart</button>
+                <button onClick={() => {console.log('click');addToCart(value)}}>Add to cart</button>
               </div>
             </>
           );
