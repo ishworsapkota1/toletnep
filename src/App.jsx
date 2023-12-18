@@ -15,19 +15,19 @@ function App() {
 const [cart, setCart] = useState([])
 const cartHelperFunction = {
   addToCart: (item) => {
- const isItemInCart = cart.find((cartItem) => cartItem.name === item.name);
+      const isItemInCart = cart.find((cartItem) => cartItem.name === item.name);
 
-  if (isItemInCart) {
-  setCart(
+    if (isItemInCart) {
+    setCart(
       cart.map((cartItem) =>
             cartItem.name === item.name
           ? { ...cartItem, quantity: cartItem.quantity + 1 }
           : cartItem
       )
-  );
-  } else {
-  setCart([...cart, { ...item, quantity: 1 }]);
-  }
+    );
+    } else {
+    setCart([...cart, { ...item, quantity: 1 }]);
+    }
 
   }
 }
